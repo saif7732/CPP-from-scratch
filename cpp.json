@@ -3,7 +3,6 @@
     "prefix": "cpp boilerplate",
     "body": [
       "#include <iostream>",
-      "",
       "using namespace std;",
       "",
       "int main(){",
