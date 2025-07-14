@@ -7,6 +7,7 @@ long long int factorial(int a){
         return 1;
     }
     return a*factorial(a-1);
+    // return a*(a-1)*factorial(a-2);     can be also written like this!!
 }
 
 int main(){
