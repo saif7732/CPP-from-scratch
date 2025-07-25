@@ -12,6 +12,7 @@ class employee{
             cin >> id;
         }
         void getdata(){
+            cout << endl<<endl<< "Details of employee" <<endl <<endl;
             cout << "The name of employee is: " << name << endl;
             cout << "The id of employee is: " << id << endl;
         }
