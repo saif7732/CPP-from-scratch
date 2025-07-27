@@ -12,7 +12,7 @@ class complex{
             cout << a <<" + "<<b<<"i" <<endl;
         }
         
-        friend complex sumnum(complex m, complex n);
+        friend complex sumnum(complex m, complex n); //can be declared inside public or private section of a class
     };
 
 complex sumnum(complex m, complex n){
