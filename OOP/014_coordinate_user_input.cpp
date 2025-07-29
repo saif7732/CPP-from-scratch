@@ -9,22 +9,30 @@ class point{
         void showpoint(){
             cout << "(" << a << ", " << b << ")" << endl;
         }
-        point(int, int);    // constructor declaration
+        void setpoint(){
+            cin >> a >> b;
+        }
         friend float distpoint(point, point);
     };
     
 float distpoint(point x, point y){
         return sqrt(pow((x.a - y.a), 2)+pow((x.b - y.b), 2));
     }
-point :: point(int x, int y){
-    a = x;
-    b = y;
-}
 
 int main(){
     
-    point dhaka(4, 5) , sylhet(7, 10);
+    point dhaka,sylhet;
+    int a, b, a1, b1;
 
+    cout << endl << "===========input part============" << endl;
+
+    cout << "enter x and y of dhaka (e.g. x y): ";
+    dhaka.setpoint();
+    cout << "enter x and y of sylher (e.g. m n): ";
+    sylhet.setpoint();
+
+    cout << endl << "============calculation===========" << endl;
+    
     cout << "Coordinate of dhaka is: ";
     dhaka.showpoint();
     cout << "Coordinate of sylher is: ";
