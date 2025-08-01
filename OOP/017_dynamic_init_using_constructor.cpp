@@ -44,9 +44,11 @@ class bankdeposits{
 
 int main(){
     
-    bankdeposits b1(100, 1, 0.05f), b2, b3;
+    bankdeposits b1(100, 1, 0.05f), b2(100, 1, 5), b3;
 
     b1.showprofit();
+    b2.showprofit();
+    b3.showprofit();
 
     return 0;
 }
