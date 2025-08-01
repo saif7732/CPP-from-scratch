@@ -11,7 +11,8 @@ class number{
             a = x;
         }
         number(number &obj){    //copy constructor
-            a = obj.a;
+            cout << "copy constructor called" << endl;
+            a = obj.a;          // when copy constructor not found, compiler use its own copy constructor
         }
         void shownum(){
             cout << a << endl;
@@ -20,7 +21,7 @@ class number{
 
 int main(){
     
-    number x, y(2), z(5), z1(z);
+    number x, y(2), z(5), z2;
 
     cout << "x: "; 
     x.shownum();
@@ -28,8 +29,18 @@ int main(){
     y.shownum();
     cout << "z: ";
     z.shownum();
+
+    number z1(z);       // copy constructor invoked
     cout << "z1: ";
     z1.shownum();
+
+    z2 = z;     // copy constructor not invoked
+    cout << "z2: ";
+    z2.shownum();
+
+    number z3 = z;      // copy constructor not invoked
+    cout << "z3: ";
+    z3.shownum();
 
     return 0;
 }
