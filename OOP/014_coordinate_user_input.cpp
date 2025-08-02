@@ -22,7 +22,7 @@ float distpoint(point x, point y){
 int main(){
     
     point dhaka,sylhet;
-    int a, b, a1, b1;
+    //int a, b, a1, b1;
 
     cout << endl << "===========input part============" << endl;
 
