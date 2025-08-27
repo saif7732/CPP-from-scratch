@@ -11,7 +11,7 @@ int main(){
     cin >> n;
 
     for(int i = 1; i<=n; i++){
-        cout << setw(3) << i  << ". I Love You!" << endl;
+        cout << setw(4) << i  << ". Happy Birthday!" << endl;
     }
 
     return 0;
