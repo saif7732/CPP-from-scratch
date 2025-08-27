@@ -6,11 +6,11 @@ typedef struct student{
     string name;
     int roll;
     char grade;
-} std;
+} student;
 
 int main(){
     
-    std CSE_A[30];
+    student CSE_A[30];
 
     for(int i = 0; i<5; i++){
 

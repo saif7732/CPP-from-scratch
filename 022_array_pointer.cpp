@@ -8,7 +8,7 @@ int main(){
     int *ptr = marks;
 
     for(int i = 0; i<6; i++){
-        cout << "The value ar marks " <<i << " is " << *(ptr++) <<endl;
+        cout << "The value at marks " <<i << " is " << *(ptr++) <<endl;
     }
 
     return 0;

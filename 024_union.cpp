@@ -13,13 +13,16 @@ int main(){
     data d;
 
     d.i = 10;
-    cout << d.i << endl;
+    cout << "i: " << d.i << endl;
+    
     d.f = 20.05;
-    cout << d.f << endl;
-    d.c = 'A';
-    cout << d.c << endl;
+    cout << "f: " << d.f << endl;
 
-    cout << "i after printing c: " << d.i <<endl;
+    cout << "i after printing f: " << d.i <<endl;       // it will provide garbage value because in the union all 
+                                                        // variables share same memory location
+    d.c = 'A';
+    cout << "c: " << d.c << endl;
+
 
 
     return 0;
