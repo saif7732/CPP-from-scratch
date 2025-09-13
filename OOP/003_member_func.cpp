@@ -19,8 +19,9 @@ void binary::chk_bin(){
         if(name.at(i) != '0' && name.at(i) != '1'){
             cout << "The number is not binary" << endl;
             exit(0);
-        }
+        }  
     }
+    cout << "The number is binary" << endl;
 }
 int main(){
     

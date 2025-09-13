@@ -38,9 +38,9 @@ int main(){
     item grocery;
 
     grocery.initCounter();
-    grocery.setprice();
+    grocery.setprice();     //
     grocery.setprice();     // takes input for 3 items
-    grocery.setprice();
+    grocery.setprice();     //
     grocery.showprice();
 
     return 0;
